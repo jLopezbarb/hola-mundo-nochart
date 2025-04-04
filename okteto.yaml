@@ -5,7 +5,7 @@ build:
 # deploy:
 #   - name: Deploy Chart
 #     command: |
-#       okteto pipeline deploy --wait=false --repository https://github.com/okteto-community/hello-world-chart \
+#       okteto pipeline deploy --wait=false --repository https://github.com/jlopezbarby/hello-world-chart \
 #         --branch main \
 #         --var HOLA_MUNDO_IMAGE_TAG=$OKTETO_BUILD_HOLA_MUNDO_SHA
 
