@@ -2,13 +2,12 @@ build:
   hola-mundo:
     context: .
 
-deploy:
-  - name: Deploy Chart
-    command: |
-      set -ex
-      if [ "$DEPLOY" != "false" ]; then okteto pipeline deploy --wait=false --repository https://github.com/okteto-community/hello-world-chart \
-        --branch main \
-        --var HOLA_MUNDO_IMAGE_TAG=$OKTETO_BUILD_HOLA_MUNDO_SHA; fi
+# deploy:
+#   - name: Deploy Chart
+#     command: |
+#       okteto pipeline deploy --wait=false --repository https://github.com/okteto-community/hello-world-chart \
+#         --branch main \
+#         --var HOLA_MUNDO_IMAGE_TAG=$OKTETO_BUILD_HOLA_MUNDO_SHA
 
 dev:
   hola-mundo:
